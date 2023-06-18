@@ -3,14 +3,20 @@
 $yellow : #FD7900;
 
 @font-face {
-  font-family: "Acrom-Bold";
-  src: url(./Fonts/Acrom-Bold.ttf);
+  font-family: "Acrom-Light";
+  src: url(./Fonts/Acrom-Light.ttf);
 }
 
 @font-face {
   font-family: "Acrom-Regular";
   src: url(./Fonts/Acrom-Regular.ttf);
 }
+
+@font-face {
+  font-family: "Acrom-Bold";
+  src: url(./Fonts/Acrom-Bold.ttf);
+}
+
 
 *{
   margin: 0;
@@ -115,6 +121,7 @@ $yellow : #FD7900;
 }
 
 .ToursCards{
+  margin-bottom: 120px;
   .row{
     h2{
       font-family: "Acrom-Bold";
@@ -126,21 +133,85 @@ $yellow : #FD7900;
       margin-bottom: 40px;
     }
     .card{
+      background: #FFFFFF;
+      box-shadow: 0px 262px 105px rgba(0, 0, 0, 0.01), 0px 148px 89px rgba(0, 0, 0, 0.03), 0px 66px 66px rgba(0, 0, 0, 0.05), 0px 16px 36px rgba(0, 0, 0, 0.06), 0px 0px 0px rgba(0, 0, 0, 0.06);
+      border-radius: 20px;
       .card-body{
         .d-flex{
           gap: 10px;
+          margin-bottom: 15px;
+          font-family: 'Acrom-Light';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #060606;
         }
 
         h3{
-          font-family: "Acrom-bold";
           font-style: normal;
           font-weight: 700;
           font-size: 28px;
           line-height: 34px;
           text-transform: capitalize;
           color: #060606;
+          margin-bottom: 20px;
+        }
+
+        .price{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #060606;
+
+          span{
+            font-family: "Acrom-Bold";
+            font-weight: 600;
+          }
+        }
+
+        button{
+          display: flex;
+          background: none;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 14px 20px;
+          gap: 10px;
+          height: 39px;
+          border: 2px solid #FD7900;
+          border-radius: 40px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: #FD7900;
         }
       }
+    }
+  }
+}
+
+.TransportInfo{
+  .row{
+    // gap: 30px;
+    h2{
+      font-family: 'Acrom-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      color: #060606;
+      margin-bottom: 40px;
+    }
+    .p1{
+      padding-right: 15px;
+    }
+
+    .p2{
+      padding-left: 15px;
     }
   }
 }
